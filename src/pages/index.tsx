@@ -11,6 +11,7 @@ import { Box } from '@mui/material'
 import CosmicCard from '@/components/organisms/cosmic-card'
 import ClassicCard from '@/components/organisms/classic-card'
 import AtomicCard from '@/components/organisms/atomic-card'
+import LotterTicket from '@/features/lottery-ticket'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -26,37 +27,9 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Box sx={{
-        padding: '12px 16px',
-        display: 'flex',
-        alignItems: 'center',
-      }}>
 
-        <Box >
-          <MenuIcon />
-        </Box>
-        <Box
-          sx={{
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
-            width: '100%'
-          }}>
 
-          <HeadingTitle title="Lottery" />
-        </Box>
-      </Box>
-
-      <Box sx={{ padding: '13px 16px' }}>
-        <Box sx={{ padding: '13px 0px' }}>
-          <HeadingTitle title="Latest Results" />
-        </Box>
-
-        <ClassicCard/>
-        <CosmicCard />
-        <AtomicCard/>
-      </Box>
-
+      <LotterTicket />
 
 
 
